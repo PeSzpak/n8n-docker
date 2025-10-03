@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/75lGdBv5c77wPgHaMVCo3e[object Object],[object Object],[object Object]Raí Giovaniartist
+[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/7tojcuXcZ7eBlQjbAc65Ee[object Object],[object Object],[object Object]MC Caverinhaartist
