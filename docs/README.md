@@ -1,1 +1,1 @@
-[object Object]boom bap,brazilian hip hophttps://api.spotify.com/v1/artists/72ee6oTbXukPvwM6BOhVUV[object Object],[object Object],[object Object]Crônicas de um Babacaartist
+[object Object]boom bap,brazilian trap,brazilian hip hop,trap,trap funkhttps://api.spotify.com/v1/artists/1mjuRRMumbLmGmHmYvMDcb[object Object],[object Object],[object Object]Rock Dangerartist
