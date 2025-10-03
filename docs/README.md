@@ -1,1 +1,1 @@
-[object Object]brazilian funkhttps://api.spotify.com/v1/artists/0z3ucc1fwTCRfe8IN7fORT[object Object],[object Object],[object Object]DJ CAMPASSIartist
+[object Object]reggae,mpb,roots reggaehttps://api.spotify.com/v1/artists/4PhdYoQGH8s1xee81dqQOO[object Object],[object Object],[object Object]Natirutsartist
