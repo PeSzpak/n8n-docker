@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,brazilian traphttps://api.spotify.com/v1/artists/78nr1pVnDR7qZH6QbVMYZf[object Object],[object Object],[object Object]Baco Exu do Bluesartist
+[object Object]brazilian trap,traphttps://api.spotify.com/v1/artists/3SyOg7lVYi7SEIVgvaVKe0[object Object],[object Object],[object Object]Lord Ralph Laurenartist
