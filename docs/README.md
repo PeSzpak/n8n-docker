@@ -1,1 +1,1 @@
-[object Object]mpb,bossa novahttps://api.spotify.com/v1/artists/5rrmaoBXZ7Jcs4Qb77j0YA[object Object],[object Object],[object Object]Djavanartist
+[object Object]mpb,brazilian rock,brazilian pophttps://api.spotify.com/v1/artists/10naVTwNjE50daQVrN0bXh[object Object],[object Object],[object Object]Cássia Ellerartist
