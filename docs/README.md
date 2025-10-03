@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,brazilian pophttps://api.spotify.com/v1/artists/1MzXJ8AaHdidMAnjgcahS4[object Object],[object Object],[object Object]Delacruzartist
+[object Object]brazilian traphttps://api.spotify.com/v1/artists/3x2uaCV0kytWRFdAGo2NJw[object Object],[object Object],[object Object]Skiterartist
