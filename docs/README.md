@@ -1,1 +1,1 @@
-[object Object]brazilian funkhttps://api.spotify.com/v1/artists/22RXQj1gd5zEbcRjdxiJbu[object Object],[object Object],[object Object]DJ Aranaartist
+[object Object]brazilian funk,brega funkhttps://api.spotify.com/v1/artists/0guw2RGoUqaWKpoCY5DzWY[object Object],[object Object],[object Object]MC Levinartist
