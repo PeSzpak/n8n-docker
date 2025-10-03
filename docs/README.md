@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/7tojcuXcZ7eBlQjbAc65Ee[object Object],[object Object],[object Object]MC Caverinhaartist
+[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/1ZzJx2AgPmbnOE6OXhnn5K[object Object],[object Object],[object Object]Ryu, The Runnerartist
