@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,boom bap,brazilian traphttps://api.spotify.com/v1/artists/204IwDdaHE4ymGk9Kya2pY[object Object],[object Object],[object Object]Djongaartist
+[object Object]https://api.spotify.com/v1/artists/75lGdBv5c77wPgHaMVCo3e[object Object],[object Object],[object Object]Raí Giovaniartist
