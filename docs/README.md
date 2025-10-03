@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,brazilian traphttps://api.spotify.com/v1/artists/09U6hmCerKcIJrixubiBjm[object Object],[object Object],[object Object]Pineapple StormTvartist
+[object Object]boom bap,brazilian hip hophttps://api.spotify.com/v1/artists/72ee6oTbXukPvwM6BOhVUV[object Object],[object Object],[object Object]Crônicas de um Babacaartist
