@@ -1,1 +1,1 @@
-[object Object]funk de bh,brazilian funk,brega funkhttps://api.spotify.com/v1/artists/0kj68SnX4WCXwveyBbRX8p[object Object],[object Object],[object Object]MC Saciartist
+[object Object]https://api.spotify.com/v1/artists/1IbLVq7OjqcArp3TkgfaOX[object Object],[object Object],[object Object]Banda AL9artist
