@@ -1,1 +1,1 @@
-[object Object]anime raphttps://api.spotify.com/v1/artists/2wJTFunFUfIEZBoSRtgGzl[object Object],[object Object],[object Object]ÉoDanartist
+[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/4LnQWC7U1XWXpcgoZN3D3Q[object Object],[object Object],[object Object]Mikezinartist
