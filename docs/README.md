@@ -1,1 +1,1 @@
-[object Object]brazilian funk,funk consciente,trap funkhttps://api.spotify.com/v1/artists/0pcoadNMmvrUyab1RxWBoV[object Object],[object Object],[object Object]MC Harielartist
+[object Object]boom baphttps://api.spotify.com/v1/artists/5wXsXDVGZodNGVVwSlYsSP[object Object],[object Object],[object Object]Raroartist
