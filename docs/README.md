@@ -1,1 +1,1 @@
-[object Object]brazilian trap,traphttps://api.spotify.com/v1/artists/3Im4m6K9QvxFBUJIOttSuH[object Object],[object Object],[object Object]LH CHUCROartist
+[object Object]brazilian trap,trap funk,traphttps://api.spotify.com/v1/artists/5qvphJwi72TG198xn5VVYH[object Object],[object Object],[object Object]CJotaartist
