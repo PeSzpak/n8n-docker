@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,brazilian pop,brazilian traphttps://api.spotify.com/v1/artists/5WFFFHVqeVk5tLuYh2KjQy[object Object],[object Object],[object Object]Luccas Carlosartist
+[object Object]indie,garage rockhttps://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH[object Object],[object Object],[object Object]Arctic Monkeysartist
