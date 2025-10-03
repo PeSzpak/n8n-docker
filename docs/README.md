@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap funk,trap,brazilian hip hophttps://api.spotify.com/v1/artists/6jBww4kwlSrjaNYP7AQPtX[object Object],[object Object],[object Object]Borgesartist
+[object Object]brazilian trap,boom bap,traphttps://api.spotify.com/v1/artists/6ixe2JpfacOq9BvkwQ9rXM[object Object],[object Object],[object Object]Brocasitoartist
