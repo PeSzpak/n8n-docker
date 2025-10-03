@@ -1,6 +1,6 @@
-# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":91102}
-Genres: brazilian trap, trap, trap funk, brazilian hip hop
-Href: https://api.spotify.com/v1/artists/4LnQWC7U1XWXpcgoZN3D3Q
-Images: [{"url":"https://i.scdn.co/image/ab6761610000e5ebd197251a668e65795e851d22","height":640,"width":640},{"url":"https://i.scdn.co/image/ab67616100005174d197251a668e65795e851d22","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f178d197251a668e65795e851d22","height":160,"width":160}]
-Name: Mikezin
+# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":2410431}
+Genres: brazilian hip hop, brazilian trap, boom bap, trap
+Href: https://api.spotify.com/v1/artists/7q1aEytv83jXNECmyaMhgn
+Images: [{"url":"https://i.scdn.co/image/ab6761610000e5eb25686998dc0297f17084b9b0","height":640,"width":640},{"url":"https://i.scdn.co/image/ab6761610000517425686998dc0297f17084b9b0","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f17825686998dc0297f17084b9b0","height":160,"width":160}]
+Name: Costa Gold
 Type: artist
