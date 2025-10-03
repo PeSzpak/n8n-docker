@@ -1,1 +1,1 @@
-[object Object]agronejo,electro,brazilian funkhttps://api.spotify.com/v1/artists/1HJO94rJDdIYO6hoj4NU3b[object Object],[object Object],[object Object]JIRAYAUAIartist
+[object Object]brazilian hip hop,brazilian traphttps://api.spotify.com/v1/artists/09U6hmCerKcIJrixubiBjm[object Object],[object Object],[object Object]Pineapple StormTvartist
