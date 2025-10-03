@@ -1,1 +1,1 @@
-[object Object]reggae,mpb,roots reggaehttps://api.spotify.com/v1/artists/4PhdYoQGH8s1xee81dqQOO[object Object],[object Object],[object Object]Natirutsartist
+[object Object]brazilian funkhttps://api.spotify.com/v1/artists/4AvoASFHoFCDxWR2yWV3Cn[object Object],[object Object],[object Object]Mario Mcartist
