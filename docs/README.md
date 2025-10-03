@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/24Ag8JC9kksyXBTC9RAnN9[object Object],[object Object],[object Object]Drosdaartist
+[object Object]brazilian funk,funk consciente,trap funkhttps://api.spotify.com/v1/artists/0pcoadNMmvrUyab1RxWBoV[object Object],[object Object],[object Object]MC Harielartist
