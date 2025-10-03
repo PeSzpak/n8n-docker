@@ -1,1 +1,1 @@
-[object Object]brazilian trap,brazilian hip hop,trap,trap funk,boom baphttps://api.spotify.com/v1/artists/76hYPcWML9NGEh8LashwT5[object Object],[object Object],[object Object]Major RDartist
+[object Object]agronejo,electro,brazilian funkhttps://api.spotify.com/v1/artists/1HJO94rJDdIYO6hoj4NU3b[object Object],[object Object],[object Object]JIRAYAUAIartist
