@@ -1,1 +1,1 @@
-[object Object]boom baphttps://api.spotify.com/v1/artists/5wXsXDVGZodNGVVwSlYsSP[object Object],[object Object],[object Object]Raroartist
+[object Object]funk de bh,brazilian funk,brega funkhttps://api.spotify.com/v1/artists/0kj68SnX4WCXwveyBbRX8p[object Object],[object Object],[object Object]MC Saciartist
