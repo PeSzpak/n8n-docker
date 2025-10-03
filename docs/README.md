@@ -1,1 +1,1 @@
-[object Object]brazilian funk,brega funkhttps://api.spotify.com/v1/artists/0guw2RGoUqaWKpoCY5DzWY[object Object],[object Object],[object Object]MC Levinartist
+[object Object]brazilian hip hop,brazilian trap,trap funk,traphttps://api.spotify.com/v1/artists/7gJN8W0589FisSYJS17K54[object Object],[object Object],[object Object]Filipe Retartist
