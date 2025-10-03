@@ -1,6 +1,6 @@
-# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":2231434}
-Genres: brazilian hip hop, boom bap, brazilian trap
-Href: https://api.spotify.com/v1/artists/1YOVBTvznjiDvtAj4ExHeo
-Images: [{"url":"https://i.scdn.co/image/ab6761610000e5ebaedd984d97865aef05fb6060","height":640,"width":640},{"url":"https://i.scdn.co/image/ab67616100005174aedd984d97865aef05fb6060","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f178aedd984d97865aef05fb6060","height":160,"width":160}]
-Name: BK
+# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":99}
+Genres: 
+Href: https://api.spotify.com/v1/artists/0yuTG8Em8f99iVQGn1l3sg
+Images: [{"url":"https://i.scdn.co/image/ab6761610000e5eb676e1d9726c41d5a4c94cfc9","height":640,"width":640},{"url":"https://i.scdn.co/image/ab67616100005174676e1d9726c41d5a4c94cfc9","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f178676e1d9726c41d5a4c94cfc9","height":160,"width":160}]
+Name: Fecchionavoz
 Type: artist
