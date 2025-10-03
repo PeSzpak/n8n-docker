@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap funk,traphttps://api.spotify.com/v1/artists/5qvphJwi72TG198xn5VVYH[object Object],[object Object],[object Object]CJotaartist
+[object Object]brazilian hip hop,brazilian pop,brazilian traphttps://api.spotify.com/v1/artists/5WFFFHVqeVk5tLuYh2KjQy[object Object],[object Object],[object Object]Luccas Carlosartist
