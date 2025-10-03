@@ -1,1 +1,1 @@
-[object Object]brazilian funkhttps://api.spotify.com/v1/artists/4AvoASFHoFCDxWR2yWV3Cn[object Object],[object Object],[object Object]Mario Mcartist
+[object Object]brazilian funkhttps://api.spotify.com/v1/artists/22RXQj1gd5zEbcRjdxiJbu[object Object],[object Object],[object Object]DJ Aranaartist
