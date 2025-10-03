@@ -1,1 +1,1 @@
-[object Object]mpb,brazilian rock,brazilian pophttps://api.spotify.com/v1/artists/10naVTwNjE50daQVrN0bXh[object Object],[object Object],[object Object]Cássia Ellerartist
+[object Object]https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM[object Object],[object Object],[object Object]Frank Oceanartist
