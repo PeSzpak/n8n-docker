@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/1ZzJx2AgPmbnOE6OXhnn5K[object Object],[object Object],[object Object]Ryu, The Runnerartist
+[object Object]brazilian hip hop,brazilian traphttps://api.spotify.com/v1/artists/78nr1pVnDR7qZH6QbVMYZf[object Object],[object Object],[object Object]Baco Exu do Bluesartist
