@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,brazilian traphttps://api.spotify.com/v1/artists/0iZz25uH5PLaShpqq84uYv[object Object],[object Object],[object Object]Papatinhoartist
+[object Object]brazilian funk,trap funk,funk consciente,funk cariocahttps://api.spotify.com/v1/artists/0gHj4MPwwcZ8Zl9CY0hqT5[object Object],[object Object],[object Object]Mc Paiva ZSartist
