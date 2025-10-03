@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/0yuTG8Em8f99iVQGn1l3sg[object Object],[object Object],[object Object]Fecchionavozartist
+[object Object]brazilian phonk,phonk,brazilian funk,funk bruxariahttps://api.spotify.com/v1/artists/1Ry5NkSxX1Ye7kTfUuLL2c[object Object],[object Object],[object Object]d.silvestreartist
