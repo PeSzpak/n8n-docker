@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,boom bap,brazilian traphttps://api.spotify.com/v1/artists/1YOVBTvznjiDvtAj4ExHeo[object Object],[object Object],[object Object]BKartist
+[object Object]https://api.spotify.com/v1/artists/0yuTG8Em8f99iVQGn1l3sg[object Object],[object Object],[object Object]Fecchionavozartist
