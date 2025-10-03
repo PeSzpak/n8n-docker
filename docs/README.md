@@ -1,1 +1,1 @@
-[object Object]brazilian phonk,phonk,brazilian funk,funk bruxariahttps://api.spotify.com/v1/artists/1Ry5NkSxX1Ye7kTfUuLL2c[object Object],[object Object],[object Object]d.silvestreartist
+[object Object]mpb,bossa novahttps://api.spotify.com/v1/artists/5rrmaoBXZ7Jcs4Qb77j0YA[object Object],[object Object],[object Object]Djavanartist
