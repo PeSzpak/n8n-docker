@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/23zizZq4kONpFkEvh7FmMQ[object Object],[object Object],[object Object]Crentuêartist
+[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/1ZcIMjx9kP46pUdFOdjWKQ[object Object],[object Object],[object Object]Abbotartist
