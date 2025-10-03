@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM[object Object],[object Object],[object Object]Frank Oceanartist
+[object Object]https://api.spotify.com/v1/artists/23zizZq4kONpFkEvh7FmMQ[object Object],[object Object],[object Object]Crentuêartist
