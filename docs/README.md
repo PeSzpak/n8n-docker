@@ -1,1 +1,1 @@
-[object Object]tropical househttps://api.spotify.com/v1/artists/3MyFDtqB80WZvbtCZRsekM[object Object],[object Object],[object Object]Bakermatartist
+[object Object]https://api.spotify.com/v1/artists/5TmfP33FVLBOl0oYDZWYx9[object Object],[object Object],[object Object]Leo Furlanettoartist
