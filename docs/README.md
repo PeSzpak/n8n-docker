@@ -1,1 +1,1 @@
-[object Object]phonkhttps://api.spotify.com/v1/artists/0dlDsD7y6ccmDm8tuWCU6F[object Object],[object Object],[object Object]Freddie Dreddartist
+[object Object]brazilian hip hop,brazilian traphttps://api.spotify.com/v1/artists/0iZz25uH5PLaShpqq84uYv[object Object],[object Object],[object Object]Papatinhoartist
