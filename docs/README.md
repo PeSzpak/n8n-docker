@@ -1,1 +1,1 @@
-[object Object]funk cariocahttps://api.spotify.com/v1/artists/4TU1r1V7Xp6Ov2X2irfm3J[object Object],[object Object],[object Object]Dj Ramon Sucessoartist
+[object Object]sexy drill,brazilian traphttps://api.spotify.com/v1/artists/24dIBlB22aVJyMNmLSEVZz[object Object],[object Object],[object Object]On The Radarartist
