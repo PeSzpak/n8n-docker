@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/1ISc8zhrqxd5WrJMkMMLSm[object Object],[object Object],[object Object]kamaitachiartist
+[object Object]anime raphttps://api.spotify.com/v1/artists/2wJTFunFUfIEZBoSRtgGzl[object Object],[object Object],[object Object]ÉoDanartist
