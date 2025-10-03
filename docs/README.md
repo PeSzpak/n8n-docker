@@ -1,1 +1,1 @@
-[object Object]sexy drill,brazilian traphttps://api.spotify.com/v1/artists/24dIBlB22aVJyMNmLSEVZz[object Object],[object Object],[object Object]On The Radarartist
+[object Object]brazilian hip hop,boom bap,brazilian traphttps://api.spotify.com/v1/artists/1YOVBTvznjiDvtAj4ExHeo[object Object],[object Object],[object Object]BKartist
