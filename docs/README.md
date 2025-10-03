@@ -1,1 +1,1 @@
-[object Object]tech house,househttps://api.spotify.com/v1/artists/0rTh1tAdrEbdKZBTiiAQSo[object Object],[object Object],[object Object]Mochakkartist
+[object Object]tropical househttps://api.spotify.com/v1/artists/3MyFDtqB80WZvbtCZRsekM[object Object],[object Object],[object Object]Bakermatartist
