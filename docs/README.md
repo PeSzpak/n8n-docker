@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/1ZcIMjx9kP46pUdFOdjWKQ[object Object],[object Object],[object Object]Abbotartist
+[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/4ZyBq7WEL7d2dDH0BkVDPX[object Object],[object Object],[object Object]Suethartist
