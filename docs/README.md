@@ -1,1 +1,1 @@
-[object Object]boom bap,brazilian trap,brazilian hip hop,trap,trap funkhttps://api.spotify.com/v1/artists/1mjuRRMumbLmGmHmYvMDcb[object Object],[object Object],[object Object]Rock Dangerartist
+[object Object]brazilian hip hop,boom bap,brazilian traphttps://api.spotify.com/v1/artists/204IwDdaHE4ymGk9Kya2pY[object Object],[object Object],[object Object]Djongaartist
