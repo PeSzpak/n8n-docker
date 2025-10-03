@@ -1,6 +1,6 @@
-# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":20502}
-Genres: brazilian trap
-Href: https://api.spotify.com/v1/artists/3x2uaCV0kytWRFdAGo2NJw
-Images: [{"url":"https://i.scdn.co/image/ab6761610000e5ebe10ab60206c1bbce1190b986","height":640,"width":640},{"url":"https://i.scdn.co/image/ab67616100005174e10ab60206c1bbce1190b986","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f178e10ab60206c1bbce1190b986","height":160,"width":160}]
-Name: Skiter
+# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":1516844}
+Genres: brazilian trap, trap, brazilian hip hop, trap funk
+Href: https://api.spotify.com/v1/artists/6yZKPB8eRoJesHjtxPxSLs
+Images: [{"url":"https://i.scdn.co/image/ab6761610000e5ebb0cff01e05f6770aa33759f1","height":640,"width":640},{"url":"https://i.scdn.co/image/ab67616100005174b0cff01e05f6770aa33759f1","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f178b0cff01e05f6770aa33759f1","height":160,"width":160}]
+Name: MD Chefe
 Type: artist
