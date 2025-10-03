@@ -1,6 +1,6 @@
-# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":24411}
+# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  Followers: {"href":null,"total":2416166}
 Genres: brazilian funk
-Href: https://api.spotify.com/v1/artists/4AvoASFHoFCDxWR2yWV3Cn
-Images: [{"url":"https://i.scdn.co/image/ab67616d0000b2736e35c1f9265c9a88d6b0a4a4","height":640,"width":640},{"url":"https://i.scdn.co/image/ab67616d00001e026e35c1f9265c9a88d6b0a4a4","height":300,"width":300},{"url":"https://i.scdn.co/image/ab67616d00004851343a9988faa878f9580f1bb6","height":64,"width":64}]
-Name: Mario Mc
+Href: https://api.spotify.com/v1/artists/22RXQj1gd5zEbcRjdxiJbu
+Images: [{"url":"https://i.scdn.co/image/ab6761610000e5eb24c28a3c4203b9854046e31e","height":640,"width":640},{"url":"https://i.scdn.co/image/ab6761610000517424c28a3c4203b9854046e31e","height":320,"width":320},{"url":"https://i.scdn.co/image/ab6761610000f17824c28a3c4203b9854046e31e","height":160,"width":160}]
+Name: DJ Arana
 Type: artist
