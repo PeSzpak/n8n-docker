@@ -1,1 +1,1 @@
-[object Object]brazilian trap,boom baphttps://api.spotify.com/v1/artists/0xKbHuoAoxvPu5uGax4d9l[object Object],[object Object],[object Object]Sotamartist
+[object Object]brazilian funkhttps://api.spotify.com/v1/artists/0z3ucc1fwTCRfe8IN7fORT[object Object],[object Object],[object Object]DJ CAMPASSIartist
