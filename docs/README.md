@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap,trap funk,brazilian hip hophttps://api.spotify.com/v1/artists/4LnQWC7U1XWXpcgoZN3D3Q[object Object],[object Object],[object Object]Mikezinartist
+[object Object]brazilian hip hop,brazilian trap,boom bap,traphttps://api.spotify.com/v1/artists/7q1aEytv83jXNECmyaMhgn[object Object],[object Object],[object Object]Costa Goldartist
