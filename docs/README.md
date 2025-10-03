@@ -1,1 +1,1 @@
-[object Object]brazilian hip hop,brazilian trap,boom bap,traphttps://api.spotify.com/v1/artists/7q1aEytv83jXNECmyaMhgn[object Object],[object Object],[object Object]Costa Goldartist
+# 🎵 Followed Artists  This file was automatically generated with n8n.  ## Artists  
