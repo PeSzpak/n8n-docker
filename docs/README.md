@@ -1,1 +1,1 @@
-[object Object]brazilian trap,trap,brazilian hip hop,trap funkhttps://api.spotify.com/v1/artists/6yZKPB8eRoJesHjtxPxSLs[object Object],[object Object],[object Object]MD Chefeartist
+[object Object]https://api.spotify.com/v1/artists/1ISc8zhrqxd5WrJMkMMLSm[object Object],[object Object],[object Object]kamaitachiartist
