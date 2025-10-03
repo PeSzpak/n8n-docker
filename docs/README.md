@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/4Gso3d4CscCijv0lmajZWs[object Object],[object Object],[object Object]Don Toliverartist
+[object Object]brazilian hip hop,brazilian trap,trap funk,traphttps://api.spotify.com/v1/artists/5YwzDz4RJfTiMHS4tdR5Lf[object Object],[object Object],[object Object]Xamãartist
