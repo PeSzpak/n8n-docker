@@ -1,1 +1,1 @@
-[object Object]brazilian trap,boom bap,traphttps://api.spotify.com/v1/artists/6ixe2JpfacOq9BvkwQ9rXM[object Object],[object Object],[object Object]Brocasitoartist
+[object Object]brazilian hip hop,brazilian pophttps://api.spotify.com/v1/artists/1MzXJ8AaHdidMAnjgcahS4[object Object],[object Object],[object Object]Delacruzartist
