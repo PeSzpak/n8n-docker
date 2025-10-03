@@ -1,1 +1,1 @@
-[object Object]https://api.spotify.com/v1/artists/1IbLVq7OjqcArp3TkgfaOX[object Object],[object Object],[object Object]Banda AL9artist
+[object Object]brazilian trap,brazilian hip hop,trap,trap funk,boom baphttps://api.spotify.com/v1/artists/76hYPcWML9NGEh8LashwT5[object Object],[object Object],[object Object]Major RDartist
