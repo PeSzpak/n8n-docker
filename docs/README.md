@@ -1,1 +1,1 @@
-[object Object]brazilian trap,traphttps://api.spotify.com/v1/artists/3SyOg7lVYi7SEIVgvaVKe0[object Object],[object Object],[object Object]Lord Ralph Laurenartist
+[object Object]phonkhttps://api.spotify.com/v1/artists/0dlDsD7y6ccmDm8tuWCU6F[object Object],[object Object],[object Object]Freddie Dreddartist
