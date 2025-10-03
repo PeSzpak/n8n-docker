@@ -1,1 +1,1 @@
-[object Object]indie,garage rockhttps://api.spotify.com/v1/artists/7Ln80lUS6He07XvHI8qqHH[object Object],[object Object],[object Object]Arctic Monkeysartist
+[object Object]https://api.spotify.com/v1/artists/17xhyCYCAcr9HNRg3FZDE5[object Object],[object Object],[object Object]ZeROartist
