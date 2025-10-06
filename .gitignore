@@ -1,0 +1,12 @@
+# n8n data directory
+n8n_data/
+
+# Environment variables (may contain sensitive data)
+.env
+
+# Docker volumes
+.docker/
+
+# Logs
+*.log
+logs/
