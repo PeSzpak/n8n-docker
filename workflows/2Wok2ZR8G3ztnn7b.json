@@ -1,0 +1,237 @@
+{
+  "createdAt": "2025-10-04T04:05:31.848Z",
+  "updatedAt": "2025-10-04T04:05:31.848Z",
+  "id": "2Wok2ZR8G3ztnn7b",
+  "name": "My workflow",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Saber os artistas ",
+        "formDescription": "preencha para listar todos os artistas do spotify ",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "Nome",
+              "placeholder": "Seu Nome da Silva",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Email ",
+              "fieldType": "email",
+              "placeholder": "seuemailpereira@gmail.com",
+              "requiredField": true
+            },
+            {
+              "fieldLabel": "Password",
+              "fieldType": "password",
+              "placeholder": "senha.com",
+              "requiredField": true
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.3,
+      "position": [
+        -416,
+        96
+      ],
+      "id": "b6e17342-dbc2-45e8-b0d9-be94bb4803b0",
+      "name": "On form submission",
+      "webhookId": "190de4f7-5aef-41c6-91d5-ee982291ecc5"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f68970fa-158f-43b5-ae03-35c2c794f874",
+              "leftValue": "={{ $json.Password }}",
+              "rightValue": "mmtec041",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -208,
+        96
+      ],
+      "id": "4f82abf0-d264-4f17-a3cc-6003907a3cf9",
+      "name": "If"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        0,
+        192
+      ],
+      "id": "a187b859-9904-42f7-b50a-76f2c9d08fa6",
+      "name": "No Operation, do nothing"
+    },
+    {
+      "parameters": {
+        "resource": "myData",
+        "returnAll": true
+      },
+      "type": "n8n-nodes-base.spotify",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "76950165-9575-4126-a9c1-fc8709a47621",
+      "name": "Get your followed artists",
+      "credentials": {
+        "spotifyOAuth2Api": {
+          "id": "pShM3g8CTJ6ML5x7",
+          "name": "Spotify account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "resource": "file",
+        "operation": "edit",
+        "owner": {
+          "__rl": true,
+          "value": "PeSzpak",
+          "mode": "list",
+          "cachedResultName": "PeSzpak",
+          "cachedResultUrl": "https://github.com/PeSzpak"
+        },
+        "repository": {
+          "__rl": true,
+          "value": "Testen8n",
+          "mode": "list",
+          "cachedResultName": "Testen8n",
+          "cachedResultUrl": "https://github.com/PeSzpak/Testen8n"
+        },
+        "filePath": "docs/README.md",
+        "fileContent": "=# Followed Artists  This file was automatically generated with n8n.  \n## Artists  \n{{ $json.content }}",
+        "commitMessage": "docs/Create a README with all my followed artists "
+      },
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1.1,
+      "position": [
+        384,
+        0
+      ],
+      "id": "6b5da1a4-1472-46d8-bb63-4d69ee36c1b2",
+      "name": "Edit a file",
+      "webhookId": "fe8da197-227b-47be-bbf7-568768676023"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst linebreak = \"\\n\";\nlet resultado = items.map((item) => {\n  return `Nome: ${item.json.name} ${linebreak}\nGêneros: ${item.json.genres.join(\", \")}${linebreak}\nSeguidores: ${item.json.followers.total}${linebreak}\nTipo: ${item.json.type}\n---`;\n}).join('\\n');\n\nreturn [{ json: { content: resultado } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "86073aa0-ab72-4153-8a33-a6ef828471a1",
+      "name": "Code in JavaScript"
+    }
+  ],
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Get your followed artists",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No Operation, do nothing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get your followed artists": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Edit a file",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "118975b1-b9aa-4ad6-86a6-e7dd5bec06b7",
+  "triggerCount": 0,
+  "tags": [],
+  "shared": [
+    {
+      "createdAt": "2025-10-04T04:05:31.854Z",
+      "updatedAt": "2025-10-04T04:05:31.854Z",
+      "role": "workflow:owner",
+      "workflowId": "2Wok2ZR8G3ztnn7b",
+      "projectId": "it08woqdC33Q5LtA",
+      "project": {
+        "createdAt": "2025-10-04T01:18:12.556Z",
+        "updatedAt": "2025-10-04T04:06:33.383Z",
+        "id": "it08woqdC33Q5LtA",
+        "name": "Pedro  Szpak <pedrohszpaka@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null
+      }
+    }
+  ]
+}

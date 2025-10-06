@@ -1,4 +1,4 @@
-# n8n data directory
+# n8n data directory (contém dados sensíveis e banco)
 n8n_data/
 
 # Environment variables (may contain sensitive data)
@@ -10,3 +10,22 @@ n8n_data/
 # Logs
 *.log
 logs/
+
+# Backups (podem ser grandes)
+backups/
+*.tar.gz
+*.zip
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
