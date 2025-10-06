@@ -2,29 +2,46 @@ services:
   n8n:
     image: 'n8nio/n8n:latest'
     container_name: n8n
-    restart: unless-stopped 
+    restart: unless-stopped
     ports:
-      - '5678:5678' 
+      - '5678:5678'
     volumes:
       - ./n8n_data:/home/node/.n8n
     environment:
       - N8N_HOST=${N8N_HOST}
       - N8N_PORT=5678
-      - N8N_PROTOCOL=http 
+      - N8N_PROTOCOL=https
       - NODE_ENV=production 
       - N8N_BASIC_AUTH_ACTIVE=true
       - N8N_BASIC_AUTH_USER=${N8N_USER}
       - N8N_BASIC_AUTH_PASSWORD=${N8N_PASSWORD}
-      - N8N_ENCRYPTION_KEY=${N8N_ENCRYPTION_KEY}
       - WEBHOOK_URL=${WEBHOOK_URL}
       - N8N_SECURE_COOKIE=${N8N_SECURE_COOKIE}
+      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=${N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS}
+      - DB_SQLITE_POOL_SIZE=${DB_SQLITE_POOL_SIZE}
+      - N8N_RUNNERS_ENABLED=${N8N_RUNNERS_ENABLED}
+      - N8N_BLOCK_ENV_ACCESS_IN_NODE=${N8N_BLOCK_ENV_ACCESS_IN_NODE}
+      - N8N_GIT_NODE_DISABLE_BARE_REPOS=${N8N_GIT_NODE_DISABLE_BARE_REPOS}
       - TZ=America/Sao_Paulo
       - N8N_LOG_LEVEL=info
       - N8N_METRICS=true
-    user: "1000:1000"
+    networks:
+      - n8n_network
+
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    container_name: nginx-proxy
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
     networks:
       - n8n_network
 
 networks:
   n8n_network:
-    driver: bridge 
+    driver: bridge
