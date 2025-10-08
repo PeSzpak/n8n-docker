@@ -1,31 +1,116 @@
-# n8n data directory (contém dados sensíveis e banco)
+# Environment variables (contém senhas e tokens)
+.env
+.env.local
+.env.*.local
+
+# n8n data directory (banco de dados e credenciais)
 n8n_data/
 
-# Environment variables (may contain sensitive data)
-.env
+# Certificados SSL e chaves privadas
+letsencrypt/
+data/
+*.pem
+*.key
+*.crt
+*.csr
 
-# Docker volumes
+# Banco de dados do Nginx Proxy Manager
+database.sqlite
+database.sqlite-shm
+database.sqlite-wal
+*.db
+*.db-shm
+*.db-wal
+
+# Configurações sensíveis do Nginx
+data/nginx/
+data/logs/
+data/access/
+data/custom_ssl/
+data/keys.json
+
+# Docker volumes e dados persistentes
 .docker/
+volumes/
+*_data/
 
 # Logs
 *.log
 logs/
-
-# Backups (podem ser grandes)
-backups/
-*.tar.gz
-*.zip
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
 # Arquivos temporários
 *.tmp
 *.temp
-
-# IDEs
-.vscode/
-.idea/
 *.swp
 *.swo
+*~
 
-# OS
+# Backups (podem ser grandes e conter dados sensíveis)
+backups/
+*.backup
+*.bak
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
 Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+node_modules/
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# Arquivos de teste
+*.test
+test-data/
+
+# Cache
+.cache/
+*.cache
+
+# Credenciais de API
+credentials/
+secrets/
+*.secrets
