@@ -1,33 +1,15 @@
 # Scripts
 
-Esta pasta contém scripts auxiliares para automação e manutenção do ambiente n8n.
+Scripts auxiliares do ambiente n8n. Rode a partir da raiz do repositório, com o container `n8n` de pé.
 
-## Scripts disponíveis
+| Script | O que faz |
+|---|---|
+| `backup.sh [nome]` | Roda `export-workflows.sh`, copia `n8n_data/database.sqlite`, `n8n_data/config`, `workflows/`, `docker-compose.yml`, `.env.example` e `Makefile` e gera `<nome>.tar.gz` na raiz (padrão `backup-AAAAMMDD-HHMMSS`) |
+| `export-workflows.sh` | Sobe o compose se o container não estiver rodando, exporta todos os workflows com `n8n export:workflow --backup` e copia os JSON para `workflows/` |
 
-### Backup e Restore
-
-- `backup.sh` - Script para backup completo dos dados
-- `restore.sh` - Script para restaurar backup
-
-### Manutenção
-
-- `export-workflows.sh` - Exporta todos os workflows
-- `import-workflows.sh` - Importa workflows desta pasta
-- `cleanup.sh` - Limpeza de arquivos temporários
-
-### Monitoramento
-
-- `health-check.sh` - Verifica se o n8n está funcionando
-- `logs.sh` - Mostra logs formatados
-
-## Como usar
-
-Torne os scripts executáveis:
 ```bash
 chmod +x scripts/*.sh
-```
-
-Execute um script:
-```bash
 ./scripts/backup.sh
 ```
+
+O `.tar.gz` contém o banco SQLite do n8n, que guarda credenciais criptografadas: trate o arquivo como sensível.
