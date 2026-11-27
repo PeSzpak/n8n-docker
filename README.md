@@ -1,143 +1,138 @@
-# n8n Docker Setup
+# n8n Docker
 
-Este repositório contém uma configuração completa do n8n usando Docker, pronta para uso em desenvolvimento e produção.
+Ambiente local do [n8n](https://n8n.io) em Docker Compose, com o Nginx Proxy Manager na frente, scripts de backup/exportação e os workflows que eu montei versionados em JSON. Tem também uma stack "backup" maior, com Evolution API (WhatsApp), Typebot, PostgreSQL e Redis.
 
-## 📋 Pré-requisitos
+![Workflow "My workflow" aberto no n8n: formulário, If, Spotify, Code e GitHub](docs/media/workflow-spotify.webp)
 
-- Docker
-- Docker Compose (ou `docker compose` plugin)
-- Git
+## O que tem aqui
 
-## 🚀 Quick Start
+- **Stack principal** (`docker-compose.yml`): n8n com SQLite em `./n8n_data` + Nginx Proxy Manager para publicar com domínio e HTTPS.
+- **Stack backup** (`docker-compose-backup.yml`): n8n, Evolution API, Typebot (builder e viewer), Nginx Proxy Manager, PostgreSQL 15 e Redis, em portas diferentes para rodar ao lado da principal. Documentada em [README-backup.md](README-backup.md).
+- **Workflows** em [`workflows/`](workflows/), exportados do n8n.
+- **Scripts** de backup e exportação em [`scripts/`](scripts/).
 
-### 1. Clone o repositório
+## Como funciona
+
+```mermaid
+flowchart LR
+  U[Navegador] -->|:5678| N[n8n<br/>n8nio/n8n:latest]
+  U -->|:80 / :443| P[Nginx Proxy Manager<br/>admin em :81]
+  P -->|proxy host| N
+  N --- D[(./n8n_data<br/>SQLite, config)]
+  N --- F[./files<br/>arquivos lidos/escritos pelos workflows]
+  P --- L[./data e ./letsencrypt]
+```
+
+Os dois serviços ficam na rede `n8n_network`, então no Nginx Proxy Manager o proxy host aponta para `n8n:5678`.
+
+## Workflows
+
+| Arquivo | Nome | O que faz | Credenciais |
+|---|---|---|---|
+| `workflows/2Wok2ZR8G3ztnn7b.json` | My workflow | Formulário (nome, e-mail, senha) → `If` compara a senha → busca os artistas seguidos no Spotify → `Code` formata em Markdown → `GitHub` edita `docs/README.md` no repositório `Testen8n` | Spotify OAuth2, GitHub OAuth2 |
+| `workflows/TradutorPDFGPT.json` | PDF to TXT Translator | Webhook `POST /pdf-upload` → lê `/files/<fileName>` → extrai o texto do PDF → divide em blocos de 3.000 caracteres → traduz com GPT-3.5 para pt-BR → junta e grava o TXT | OpenAI |
+
+[`docs/LISTAR-ARTISTAS.md`](docs/LISTAR-ARTISTAS.md) é um exemplo da saída do primeiro workflow.
+
+Para importar pela interface: **Workflows > Import from File**. Pela linha de comando, com o container de pé:
+
 ```bash
-git clone https://github.com/PeSzpak/n8n-docker.git
-cd n8n-docker
-```
-
-### 2. Configure as variáveis de ambiente
-```bash
-cp .env.example .env
-```
-
-Edite o arquivo `.env` com suas configurações:
-- `N8N_USER`: Seu email para login
-- `N8N_PASSWORD`: Sua senha (use uma senha forte!)
-- `N8N_ENCRYPTION_KEY`: Chave para criptografia (mude em produção!)
-
-### 3. Inicie o n8n
-```bash
-docker compose up -d
-```
-
-### 4. Acesse o n8n
-Abra seu navegador e acesse: [http://localhost:5678](http://localhost:5678)
-
-## 📁 Estrutura do Projeto
-
-```
-.
-├── docker-compose.yml      # Configuração do Docker Compose
-├── .env.example           # Exemplo de variáveis de ambiente
-├── .env                   # Suas variáveis de ambiente (não versionado)
-├── Makefile              # Comandos úteis
-├── workflows/            # Workflows exportados do n8n (versionados)
-├── scripts/              # Scripts auxiliares
-├── configs/              # Arquivos de configuração
-├── templates/            # Templates reutilizáveis
-├── docs/                 # Documentação adicional
-└── n8n_data/            # Dados persistentes do n8n (não versionado)
-```
-
-## 🔧 Comandos Úteis
-
-### Usando Make (recomendado)
-```bash
-make start      # Inicia os containers
-make stop       # Para os containers
-make logs       # Mostra os logs
-make restart    # Reinicia os containers
-make clean      # Para e remove containers
-```
-
-### Usando Docker Compose diretamente
-```bash
-docker compose up -d        # Inicia em background
-docker compose down         # Para e remove containers
-docker compose logs -f      # Acompanha os logs
-docker compose restart      # Reinicia os serviços
-```
-
-## 📤 Exportar/Importar Workflows
-
-### Exportar workflows existentes
-```bash
-# Exporta todos os workflows para a pasta workflows/
-docker exec n8n n8n export:workflow --backup --output=/home/node/.n8n/workflows_export/
-cp n8n_data/workflows_export/* workflows/
-```
-
-### Importar workflows
-```bash
-# Copia workflows para dentro do container
 docker cp workflows/ n8n:/home/node/.n8n/import/
-# Importa workflows
 docker exec n8n n8n import:workflow --input=/home/node/.n8n/import/ --separate
 ```
 
-## 🔒 Segurança
+As credenciais não vão no JSON; depois de importar, crie as suas no n8n e selecione nos nós.
 
-- **Produção**: Altere `N8N_ENCRYPTION_KEY` para uma chave única e segura
-- **Senhas**: Use senhas fortes e considere usar gerenciadores de senha
-- **HTTPS**: Configure HTTPS em produção (não incluído neste setup)
-- **Backup**: Faça backup regular do `n8n_data/database.sqlite`
+## Como rodar
 
-## 🛠 Troubleshooting
+### Pré-requisitos
 
-### Container não inicia
-1. Verifique se as portas 5678 estão livres: `lsof -i :5678`
-2. Verifique os logs: `docker compose logs`
-3. Reinicie o Docker se necessário
+- Docker com Docker Compose v2
+- Portas livres: 5678 (n8n), 80, 81 e 443 (Nginx Proxy Manager)
 
-### Problemas de permissão
+### Subir
+
 ```bash
-# Corrige permissões da pasta de dados
-sudo chown -R 1000:1000 n8n_data/
+git clone https://github.com/PeSzpak/n8n-docker.git
+cd n8n-docker
+cp .env.example .env
+make up            # ou: docker compose up -d
 ```
+
+- n8n: http://localhost:5678. No primeiro acesso o n8n pede para criar a conta de dono (e-mail e senha).
+- Nginx Proxy Manager: http://localhost:81 (o login inicial é o padrão da imagem `jc21/nginx-proxy-manager`, trocado no primeiro acesso).
+
+### Variáveis (`.env.example`)
+
+| Variável | Valor de exemplo | Para que serve |
+|---|---|---|
+| `N8N_HOST` | `localhost` | Host público do n8n |
+| `WEBHOOK_URL` | `http://localhost:5678/` | URL base dos webhooks |
+| `N8N_ENCRYPTION_KEY` | `n8n-encryption-key-change-this-in-production` | Definida no `.env.example`, mas **não é repassada** ao container (ver limitações) |
+| `N8N_USER`, `N8N_PASSWORD` | e-mail e senha | Viram `N8N_BASIC_AUTH_*`, que o n8n atual ignora (ver limitações) |
+| `N8N_SECURE_COOKIE` | `false` | Permite login por HTTP local |
+| `DB_SQLITE_POOL_SIZE` | `5` | Pool do SQLite |
+| `N8N_RUNNERS_ENABLED` | `true` | Task runners para o nó Code |
+| `N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS` | `true` | Exige permissão restrita no arquivo de config |
+| `N8N_BLOCK_ENV_ACCESS_IN_NODE` | `false` | Libera `$env` nos nós |
+| `N8N_GIT_NODE_DISABLE_BARE_REPOS` | `true` | Bloqueia repositórios bare no nó Git |
+| `SUBDOMAIN`, `DOMAIN` | `localhost` | Não são usadas pelo compose |
+
+### Comandos do Makefile
+
+| Comando | O que faz |
+|---|---|
+| `make up` / `make down` / `make restart` | Sobe, para e reinicia a stack |
+| `make logs`, `make logs-n8n`, `make logs-nginx` | Logs de tudo, do n8n ou do proxy |
+| `make status` | `docker compose ps` + `docker stats` dos dois containers |
+| `make shell` | Shell dentro do container do n8n |
+| `make pull` | Baixa a imagem mais recente do n8n |
+| `make clean` | `docker compose down -v` **e** `docker system prune -f` (apaga também containers parados e imagens órfãs de outros projetos) |
+| `make help` | Lista os comandos |
+
+### Backup e exportação
+
+```bash
+./scripts/export-workflows.sh   # exporta todos os workflows para workflows/
+./scripts/backup.sh             # gera backup-AAAAMMDD-HHMMSS.tar.gz com banco, config e workflows
+```
+
+Detalhes em [scripts/README.md](scripts/README.md).
 
 ### Reset completo
+
 ```bash
-make clean
+make down
 rm -rf n8n_data/
-docker compose up -d
+make up
 ```
 
-## 🌐 Variáveis de Ambiente
+## Estrutura
 
-| Variável | Descrição | Valor Padrão |
-|----------|-----------|--------------|
-| `N8N_HOST` | Host do n8n | `localhost` |
-| `N8N_USER` | Email para login | - |
-| `N8N_PASSWORD` | Senha para login | - |
-| `N8N_ENCRYPTION_KEY` | Chave de criptografia | - |
-| `DB_SQLITE_POOL_SIZE` | Pool de conexões SQLite | `5` |
-| `N8N_RUNNERS_ENABLED` | Ativar task runners | `true` |
+```
+.
+├── docker-compose.yml          # n8n + Nginx Proxy Manager
+├── docker-compose-backup.yml   # stack backup (n8n, Evolution API, Typebot, Postgres, Redis, NPM)
+├── .env.example                # variáveis da stack principal
+├── .env-backup                 # variáveis da stack backup
+├── Makefile
+├── scripts/                    # backup.sh, export-workflows.sh
+├── workflows/                  # workflows exportados (JSON)
+├── docs/                       # saída de exemplo e imagens do README
+├── n8n_data/                   # criado na primeira execução (não versionado)
+└── files/                      # criado na primeira execução, montado em /files
+```
 
-## 📝 Contribuição
+## Limitações conhecidas
 
-1. Fork o projeto
-2. Crie sua feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+- `N8N_BASIC_AUTH_ACTIVE/USER/PASSWORD` não existem mais desde o n8n 1.0; o login é a conta de dono criada no primeiro acesso, então `N8N_USER` e `N8N_PASSWORD` não têm efeito.
+- `N8N_ENCRYPTION_KEY` está no `.env.example`, mas o `docker-compose.yml` não repassa essa variável ao container: o n8n gera uma chave própria em `n8n_data/config`. Perder essa pasta torna as credenciais salvas ilegíveis.
+- O compose define `N8N_PROTOCOL=https` mesmo com o acesso local sendo por HTTP; isso afeta as URLs que o n8n gera (webhooks de teste, OAuth) quando `WEBHOOK_URL` não está definido.
+- `workflows/TradutorPDFGPT.json` não importa no n8n 2.x (testado na 2.48.8): os nós `Function` foram descontinuados e precisam virar nós `Code`. Ele também usa `readBinaryFile`/`writeBinaryFile` e um nó `webhook` como resposta, que são de versões antigas.
+- O `If` de `My workflow` compara a senha do formulário com um valor fixo dentro do JSON.
+- `make diagnostico` chama `./diagnostico.sh`, que não existe no repositório.
+- A imagem é `n8nio/n8n:latest`, então a versão muda a cada `make pull`.
 
-## 📄 Licença
+## Licença
 
-Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
-
-## 🆘 Suporte
-
-- [Documentação oficial do n8n](https://docs.n8n.io/)
-- [n8n Community](https://community.n8n.io/)
-- [Issues do projeto](https://github.com/PeSzpak/n8n-docker/issues)
+Não há arquivo `LICENSE` no repositório.
